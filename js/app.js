@@ -47,6 +47,7 @@ showcaseEl.addEventListener("click", (e) => {
   if (clickedScanButton) {
     console.log("Кнопка Сканировать нажата")
     showcaseEl2.innerHTML = inputBarCode();
+    showcaseEl.innerHTML = resetField();
   }
 });
 
