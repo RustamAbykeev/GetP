@@ -1,31 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <title>Get Price project</title>
-</head>
-<body>
+  </head>
+  <body>
     <header class="header">
-    <div class="container">
+      <div class="container">
         <span class="logo">GetP</span>
         <a href="#" class="shop-enter">Вход для магазинов</a>
-    </div>
+      </div>
     </header>
     <main class="main">
-        <p class="shop-title">магазин Айша</p>
-        <div class="container" id="showcase">
-            <div class="suggest-box">
-                <img src="./img/welcome_sketch.png" class="welcome-sketch" alt="welcome">
-                <p class="welcome-suggest">Нажмите кнопку<br>Сканировать товар,<br>чтобы узнать цену</p></div>
-                <button class="btn" id="scanButton">Сканировать товар</button>  
+      <p class="shop-title" id="someId">магазин Айша</p>
+      <div class="container" id="showcase">
+        <div class="suggest-box">
+          <img
+            src="./img/welcome_sketch.png"
+            class="welcome-sketch"
+            alt="welcome"
+          />
+          <p class="welcome-suggest">
+            Нажмите кнопку<br />Сканировать товар,<br />чтобы узнать цену
+          </p>
         </div>
-        
+        <button class="scan-btn btn" id="scanButton">Сканировать товар</button>
+      </div>
+      <div class="showcase2" id="showcase2"></div>
+      <div class="showcase3" id="showcase3"></div>
     </main>
+    <script>
+      console.log("Hello, World!")
+    </script>
     <script src="./js/app.js"></script>
-</body>
+  </body>
 </html>

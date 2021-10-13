@@ -209,14 +209,14 @@ a {
   display: inline-flex;
 }
 
-button {
+/* button {
   font: inherit;
   color: inherit;
   padding: 0;
   border: 0;
   background: none;
   cursor: pointer;
-}
+} */
 
 .container {
   max-width: 1110px;
