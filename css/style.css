@@ -209,14 +209,14 @@ a {
   display: inline-flex;
 }
 
-/* button {
+button {
   font: inherit;
   color: inherit;
   padding: 0;
   border: 0;
   background: none;
   cursor: pointer;
-} */
+}
 
 .container {
   max-width: 1110px;
@@ -269,6 +269,10 @@ a {
     align-items: center;
     justify-content: space-between;
   }
+  /* .showcase, .showcase2, .showcase3 {
+    min-height: 500px;
+  } */
+
   .header {
     padding: 15px 0px;
     margin-bottom: 45px;
@@ -286,7 +290,7 @@ a {
     text-align: center;
   }
 
-  .main>.container, .input-form {
+  .main>.container, .unput-form {
     display: flex;
     flex-flow: column wrap;
     align-items: center;
@@ -298,6 +302,7 @@ a {
   .welcome-suggest {
     color: #808080;
     margin-bottom: 80px;
+  }
 
   }
   .btn {
@@ -311,7 +316,6 @@ a {
     margin: 0px auto;
     /* margin: 0 auto; */
   }
-}
 
 .input-barcode {
   margin-bottom: 40px;
@@ -319,6 +323,12 @@ a {
   padding: 10px;
 }
 
+.filled {
+  min-height: 500px;
+    }
+.empty {
+      min-height: 0px;
+    }
 /* `sm` applies to x-small devices (iphone 5,5s,SE) */
 /* @media (max-width: 320px) {
   .header > .container {

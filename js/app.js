@@ -40,6 +40,7 @@ const showcaseEl = document.getElementById("showcase");
 const showcaseEl2 = document.getElementById("showcase2")
 const showcaseEl3 = document.getElementById("showcase3")
 // const inputFormEl = document.getElementById("inputForm");
+// document.body.className
 
 showcaseEl.addEventListener("click", (e) => {
   e.preventDefault();
@@ -47,7 +48,10 @@ showcaseEl.addEventListener("click", (e) => {
   if (clickedScanButton) {
     console.log("Кнопка Сканировать нажата")
     showcaseEl2.innerHTML = inputBarCode();
+    // showcaseEl.innerHTML = resetField();
+    showcaseEl2.classList.add('filled');
     showcaseEl.innerHTML = resetField();
+    showcaseEl.classList.add('empty');
   }
 });
 
@@ -71,15 +75,17 @@ showcaseEl2.addEventListener("click", e => {
     const idx = codes.findIndex(barcodeIdx => barcodeIdx.id === +userBarcode);
     showcaseEl3.innerHTML = showBarcodePrice(codes, idx)
     showcaseEl2.innerHTML = resetField();
+    showcaseEl2.classList.remove('filled');
+    showcaseEl2.classList.add('empty');
   }
 });
 
 // компонент ввода номера штрих кода
 function inputBarCode() {
-  return `<form id="form" name="form1">
+  return `<form id="form" name="form1" class="unput-form">
 <input type="text" name="barcode" placeholder="Введите штрих код">
-<button class="input-btn" type="button">Подтвердить</button>
 </form>
+<button class="input-btn btn" type="button">Подтвердить</button>
 `;
 }
 
